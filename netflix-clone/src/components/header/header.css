@@ -1,0 +1,56 @@
+.header_outer_container {
+  position: sticky;
+  top: 0;
+  display: flex;
+  justify-content: space-between; /* Changed for better spacing */
+  align-items: center;
+  background-color: rgba(20, 20, 20, 0.9);
+  /* Slightly opaque for better visibility */
+  height: 10vh;
+  color: white;
+  transition: background-color 0.5s ease-in, height 0.5s ease-in; /* Combined transitions */
+  z-index: 1;
+}
+
+.nav_black {
+  background-color: rgb(20, 20, 20); /* Still solid */
+}
+
+.header_container {
+  width: 90%;
+  display: flex;
+  justify-content: space-between; /* Adjusted for better layout */
+  align-items: center;
+}
+
+.header_left ul {
+  width: auto; /* Adjusted for responsive behavior */
+  display: flex;
+  justify-content: space-around; /* Optimized spacing */
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+  padding: 0; /* Reset padding */
+}
+
+.header_right ul {
+  width: auto; /* Adjusted for responsive behavior */
+  display: flex;
+  justify-content: space-around; /* Optimized spacing */
+  align-items: center;
+  list-style: none;
+  cursor: pointer;
+}
+
+/* Add some padding to ul items for better spacing */
+.header_left ul li,
+.header_right ul li {
+  padding: 10px 15px; /* Add padding for clickable items */
+  transition: background-color 0.3s; /* Smooth background transition on hover */
+}
+
+.header_left ul li:hover,
+.header_right ul li:hover {
+  background-color: rgba(255, 255, 255, 0.1); /* Highlight effect on hover */
+  border-radius: 5px; /* Rounded corners on hover */
+}
