@@ -7,8 +7,7 @@ import { BrowserRouter } from "react-router-dom"; // <-- add this
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
   <React.StrictMode>
-    <BrowserRouter basename="/netflix-clone">
-      {" "}
+    <BrowserRouter basename="/Netflix-Clone">
       {/* <-- add basename if shows only white screen */}
       <App />
     </BrowserRouter>
